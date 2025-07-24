@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Codelix</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome-link.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./js/codelix.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="container">
+        <header class="header">
+            <!-- Logo/Company Name -->
+            <div class="header-logo-section">
+                <img src="./images/header-logo.png" alt="Codelix Logo" class="header-logo">
+            </div>
+
+            <!-- Menu Icon and Text -->
+            <div id="menuToggle" class="menu-toggle">
+                <span class="menu-text black-text">Menu</span>
+                <div class="menu-icon">
+                    <img src="./images/menu-icon.png" alt="">
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- Overlay for when menu is open -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Side Menu -->
+    <nav id="sideMenu" class="side-menu">
+        <div class="side-menu-close-button-container">
+            <!-- Close button for the side menu -->
+            <button id="closeMenu" class="close-menu-button">
+                &times;
+            </button>
+        </div>
+        <!-- Menu Items -->
+        <a href="index.html">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#" class="active">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Portfolio Hero Section -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <div class="portfolio-content">
+                <!-- Text Content -->
+                <div class="portfolio-text">
+                    <h1 class="portfolio-title">Designs</h1>
+                    <h1 class="portfolio-title">That Define</h1>
+                    <h1 class="portfolio-title">Digital</h1>
+                    <h1 class="portfolio-subtitle">Excellence</h1>
+                    <a href="#contact" class="cta-button">Get In Touch</a>
+                </div>
+                
+                <!-- Portfolio Image -->
+                <div class="portfolio-image">
+                    <img src="./images/portfolio-image.png" alt="Portfolio Work">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section class="portfolio-grid">
+        <div class="container">
+            <!-- Row 1 -->
+            <div class="portfolio-item">
+                <img src="./images/portfolio/portfolio-1.png" alt="Portfolio Item 1">
+            </div>
+            
+            <!-- Row 2 -->
+            <div class="portfolio-item">
+                <img src="./images/portfolio/portfolio2.png" alt="Portfolio Item 2">
+            </div>
+            
+            <!-- Row 3 -->
+            <div class="portfolio-item">
+                <img src="./images/portfolio/portfolio3.png" alt="Portfolio Item 3">
+            </div>
+            
+            <!-- Row 4 -->
+            <div class="portfolio-item">
+                <img src="./images/portfolio/portfolio4.png" alt="Portfolio Item 4">
+            </div>
+            
+            <!-- Row 5 -->
+            <div class="portfolio-item">
+                <img src="./images/portfolio/portfolio5.png" alt="Portfolio Item 5">
+            </div>
+
+            <!-- Row 5 -->
+            <div class="portfolio-item">
+                <img src="./images/portfolio/portfolio6.png" alt="Portfolio Item 5">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <div class="testimonial-header">
+            <h2 class="testimonial-bg-text">Testimonial</h2>
+            <p class="testimonial-subtitle">Words from Our Partners</p>
+        </div>
+        <div class="testimonial-slider">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-slide active">
+                <div class="testimonial-content">
+                    <div class="testimonial-avatar-container">
+                        <img src="https://i.pravatar.cc/150?img=32" alt="Sarah Johnson" class="testimonial-avatar" />
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <h3 class="testimonial-name">Sarah Johnson</h3>
+                    <span class="testimonial-role">CEO, TechNova Solutions</span>
+                    <p class="testimonial-text">Working with Codalix has been a game-changer for our business. Their team delivered our e-commerce platform ahead of schedule, and the results have exceeded our expectations. The attention to detail and innovative solutions they provided were impressive.</p>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <div class="testimonial-avatar-container">
+                        <img src="https://i.pravatar.cc/150?img=45" alt="Michael Chen" class="testimonial-avatar" />
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <h3 class="testimonial-name">Michael Chen</h3>
+                    <span class="testimonial-role">CTO, MobileFirst Inc.</span>
+                    <p class="testimonial-text">The mobile app developed by Codalix has transformed how we engage with our customers. The user experience is seamless, and the performance is outstanding. Their team's expertise in mobile technologies is truly commendable. Highly recommended!</p>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <div class="testimonial-avatar-container">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="Emily Rodriguez" class="testimonial-avatar" />
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <h3 class="testimonial-name">Emily Rodriguez</h3>
+                    <span class="testimonial-role">Design Director, PixelPerfect</span>
+                    <p class="testimonial-text">Codalix's UI/UX design services helped us revamp our entire digital presence. The new design not only looks stunning but has significantly improved our conversion rates. Their team understood our vision and brought it to life perfectly.</p>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <button class="testimonial-nav prev" aria-label="Previous testimonial">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="testimonial-nav next" aria-label="Next testimonial">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Dots Navigation -->
+            <div class="testimonial-dots">
+                <span class="dot active" data-slide="0" aria-label="Go to slide 1"></span>
+                <span class="dot" data-slide="1" aria-label="Go to slide 2"></span>
+                <span class="dot" data-slide="2" aria-label="Go to slide 3"></span>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="launndry-care-section section-padding">
+        <div class="container">
+            <div class="row position-relative row-gap">
+                <div class="col-lg-6">
+                    <div class="laundry-title" style="margin-left: 80px;">
+                        <p>You Have A New Idea? Let's talk with a Coffee</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center justify-content-center btn-responsive">
+                    <div class="get-in-touch-btn">
+                        <a href="#"><button>Get in touch</button></a>
+                    </div>
+                </div>
+
+                <div class="circle-img">
+                    <img src="./images/circle (2).png" alt="circle background">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Import Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Book+Antiqua:wght@400;700&display=swap');
+
+        /* Portfolio Hero Section */
+        .portfolio-hero {
+            padding: 40px 0;
+            background: #FFFFFF;
+        }
+
+        .portfolio-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .portfolio-text {
+            flex: 1;
+            max-width: 50%;
+        }
+
+        .portfolio-title {
+            font-family: 'Book Antiqua', serif;
+            font-size: 72px;
+            line-height: 1.1;
+            color: #000000;
+            margin: 0 0 5px 0;
+            font-weight: 400;
+            letter-spacing: -1.5px;
+        }
+
+        .portfolio-subtitle {
+            font-family: 'Book Antiqua', serif;
+            font-size: 72px;
+            line-height: 1.1;
+            color: #000000;
+            margin: 0 0 30px 0;
+            font-weight: 400;
+            font-style: italic;
+            display: block;
+            position: relative;
+            padding-bottom: 30px;
+        }
+
+        .portfolio-subtitle::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 35px;
+            background-image: url('./images/vector.svg');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: left bottom;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid #000000;
+        }
+
+        .cta-button:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Portfolio Image */
+        .portfolio-image {
+            flex: 1;
+            text-align: right;
+        }
+
+        .portfolio-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .portfolio-title,
+            .portfolio-subtitle {
+                font-size: 64px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .portfolio-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
+            }
+
+            .portfolio-text {
+                max-width: 100%;
+            }
+
+            .portfolio-image {
+                text-align: center;
+            }
+
+            .vector-108 {
+                margin: 10px auto 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-title,
+            .portfolio-subtitle {
+                font-size: 48px;
+            }
+
+            .portfolio-hero {
+                padding: 30px 0;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .portfolio-title,
+            .portfolio-subtitle {
+                font-size: 36px;
+            }
+        }
+
+        /* Portfolio Grid Styles */
+        .portfolio-grid {
+            padding: 60px 0;
+            background: #FFFFFF;
+        }
+
+        .portfolio-grid .container {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .portfolio-item {
+            width: 90%;
+            margin: 0 auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 1s ease, box-shadow 0.3s ease, opacity 1s ease;
+            transform: scale(0.8);
+            opacity: 0;
+            transform-origin: center;
+        }
+        
+        .portfolio-item.animate {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media (max-width: 1200px) {
+            .portfolio-grid .container {
+                gap: 50px;
+                max-width: 1000px;
+            }
+            .portfolio-item {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-grid {
+                padding: 30px 0;
+            }
+            
+            .portfolio-grid .container {
+                gap: 40px;
+            }
+            
+            .portfolio-item {
+                width: 90%;
+                border-radius: 12px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .portfolio-grid .container {
+                gap: 40px;
+            }
+        }
+
+        /* Testimonial Section */
+.testimonial-section {
+    padding: 80px 0;
+    position: relative;
+    background-color: #F5F5F5;
+    text-align: center;
+    overflow: hidden;
+}
+
+.testimonial-header {
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.testimonial-bg-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 100px;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.testimonial-subtitle {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 28px;
+    color: #1a1a1a;
+    margin-top: -20px;
+    position: relative;
+    z-index: 2;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.testimonial-slider {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    z-index: 2;
+}
+
+.testimonial-slide {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0.4; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.testimonial-slide.active {
+    display: block;
+}
+
+.testimonial-content {
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px 30px;
+    margin: 0 auto;
+    max-width: 800px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0f0f0;
+}
+
+.testimonial-avatar-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+}
+
+.testimonial-avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.testimonial-avatar:hover {
+    transform: scale(1.05);
+}
+
+.testimonial-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    background: #3f51b5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-name {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    color: #1a1a1a;
+    margin: 15px 0 5px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.testimonial-role {
+    display: block;
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.testimonial-text {
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+    color: #4a5568;
+    line-height: 1.8;
+    margin: 0 auto 20px;
+    max-width: 700px;
+    position: relative;
+    font-style: italic;
+    padding: 0 15px;
+}
+
+.rating-stars {
+    color: #ffc107;
+    font-size: 18px;
+    margin: 20px 0 5px;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.rating-stars i {
+    margin: 0 1px;
+}
+
+.rating-stars .fa-star-half-alt,
+.rating-stars .far.fa-star {
+    color: #e5e7eb;
+}
+
+.rating-stars .fas.fa-star-half-alt {
+    background: linear-gradient(to right, #ffc107 50%, #e5e7eb 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.testimonial-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    padding: 0;
+    transition: all 0.3s ease;
+    z-index: 10;
+    outline: none;
+    color: #4b5563;
+}
+
+.testimonial-nav:hover {
+    background: #3f51b5;
+    color: white;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
+    border-color: #3f51b5;
+}
+
+.testimonial-nav.prev {
+    left: 10px;
+}
+
+.testimonial-nav.next {
+    right: 10px;
+}
+
+.testimonial-nav i {
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.testimonial-nav:hover i {
+    transform: scale(1.2);
+}
+
+/* Add subtle animation to the quote icon */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+testimonials:hover .testimonial-icon i {
+    animation: pulse 1.5s infinite;
+}
+
+.testimonial-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.testimonial-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #e2e8f0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+.testimonial-dots .dot.active {
+    background-color: #3f51b5;
+    transform: scale(1.2);
+}
+
+.testimonial-dots .dot:hover:not(.active) {
+    background-color: #93c5fd;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .testimonial-bg-text {
+        font-size: 80px;
+    }
+    
+    .testimonial-content {
+        padding: 30px 20px;
+    }
+    
+    .testimonial-text {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+    
+    .testimonial-avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .testimonial-nav {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .testimonial-nav img {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial-section {
+        padding: 60px 0;
+    }
+    
+    .testimonial-bg-text {
+        font-size: 60px;
+    }
+    
+    .testimonial-subtitle {
+        font-size: 22px;
+        margin-top: -15px;
+    }
+    
+    .testimonial-content {
+        padding: 30px 15px;
+    }
+    
+    .testimonial-avatar {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .testimonial-name {
+        font-size: 20px;
+    }
+    
+    .testimonial-text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    
+    .testimonial-nav {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .testimonial-nav img {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .testimonial-dots {
+        margin-top: 25px;
+    }
+    
+    .testimonial-dots .dot {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-bg-text {
+        font-size: 50px;
+    }
+    
+    .testimonial-subtitle {
+        font-size: 20px;
+        margin-top: -10px;
+    }
+    
+    .testimonial-slider {
+        padding: 30px 10px;
+    }
+    
+    .testimonial-content {
+        padding: 25px 15px;
+    }
+    
+    .testimonial-nav {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .testimonial-nav.prev {
+        left: 5px;
+    }
+    
+    .testimonial-nav.next {
+        right: 5px;
+    }
+}
+    </style>
+
+    <script>
+        // Intersection Observer for scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            
+            const observerOptions = {
+                threshold: 0.3,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                        // Unobserve after animation starts to improve performance
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe each portfolio item
+            portfolioItems.forEach(item => {
+                observer.observe(item);
+            });
+            
+            // Add initial animation for first item if it's already in view
+            const firstItem = document.querySelector('.portfolio-item');
+            if (firstItem) {
+                const firstItemPosition = firstItem.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (firstItemPosition < screenPosition) {
+                    firstItem.classList.add('animate');
+                }
+            }
+        });
+    </script>
+
+    <!-- Footer Section -->
+    <footer class="footer section-padding">
+        <div class="container footer-border">
+            <div class="footer-grid">
+                <!-- Info Column -->
+                <div class="footer-column p-5">
+                    <h4>INFO</h4>
+                    <ul>
+                        <li><a href="#">Codalix</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div class="footer-column p-5">
+                    <h4>SERVICES</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Agentic AI</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="footer-column newsletter p-5"
+                    style="border-left: 1px solid #ffffff; padding-right: 0px !important;">
+                    <h4>JOIN NOW</h4>
+                    <p>Join Our Newsletter To Stay Up To Date On Features And Releases</p>
+                    <form>
+                        <input type="email" placeholder="E-mail" required />
+                        <button type="submit">→</button>
+                    </form>
+                    <p class="small-note">Join Our Newsletter To Stay Up To Date On Features And Releases</p>
+                </div>
+
+                <!-- Logo Column -->
+                <div class="footer-column logo-col">
+                    <div class="p-5">
+                        <img width="50px" src="./images/footer-logo.png" alt="Logo" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="d-flex justify-content-between">
+                    <p>info@codelix.in</p>
+                    <img src="./images/ep_top-right.png" alt="">
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p>INSTAGRAM</p>
+                    <img src="./images/ep_top-right.png" alt="">
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p>UPWORK</p>
+                    <img src="./images/ep_top-right.png" alt="">
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p>LINKEDIN</p>
+                    <img src="./images/ep_top-right.png" alt="">
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p> 2025 Codalix Foundation — All Copyright Reserved</p>
+                <div>
+                    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+<script src="js/testimonial-slider.js"></script>
+</html>
