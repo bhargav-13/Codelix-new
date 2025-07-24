@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Codalix</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome-link.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <script src="./js/codelix.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="container">
+        <header class="header">
+            <!-- Logo/Company Name -->
+            <div class="header-logo-section">
+                <img src="./images/header-logo.png" alt="Codelix Logo" class="header-logo">
+            </div>
+
+            <!-- Menu Icon and Text -->
+            <div id="menuToggle" class="menu-toggle">
+                <span class="menu-text black-text">Menu</span>
+                <div class="menu-icon">
+                    <img src="./images/menu-icon.png" alt="">
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- Overlay for when menu is open -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Side Menu -->
+    <nav id="sideMenu" class="side-menu">
+        <div class="side-menu-close-button-container">
+            <button id="closeMenu" class="close-menu-button">
+                &times;
+            </button>
+        </div>
+        <!-- Menu Items -->
+        <a href="index.html">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text-section">
+                <div class="hero-text">
+                    <h1 class="hero-title">Empowering Your Journey to What's Next</h1>
+                    <p class="hero-description">We're here to take your brand or product from great to extraordinary. Share your project details and let's bring your vision to life.</p>
+                </div>
+            </div>
+            <div class="hero-image-section">
+                <div class="hero-image-container">
+                    <img src="./images/hero-contact.png" alt="Contact Us" class="hero-image" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Makes Us Brilliant Section -->
+    <section class="brilliant-section">
+        <h2 class="brilliant-title">What Makes Us Brilliant?</h2>
+        <div class="brilliant-cards">
+            <div class="brilliant-card">
+                <div class="card-icon-container">
+                    <img src="./images/people-icon.png" alt="People Icon" class="card-icon" />
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">People</h3>
+                    <p class="card-description">With our design & development ninjas by our side, there's absolutely nothing we can't achieve.</p>
+                </div>
+            </div>
+            <div class="brilliant-card">
+                <div class="card-icon-container">
+                    <img src="./images/progress-icon.png" alt="Progress Icon" class="card-icon" />
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Progress</h3>
+                    <p class="card-description">We turn your vision into reality with a proven end-to-end process. From strategy to launch, every step is handled with care.</p>
+                </div>
+            </div>
+            <div class="brilliant-card">
+                <div class="card-icon-container">
+                    <img src="./images/passion-icon.png" alt="Passion Icon" class="card-icon" />
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Passion</h3>
+                    <p class="card-description">We turn your product vision from brainstorming to a fully implemented real-world solution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meeting Section -->
+    <section class="meeting-section">
+        <div class="meeting-container">
+            <div class="meeting-content">
+                <div class="meeting-left">
+                    <div class="meeting-header">
+                        <h2 class="meeting-title">Schedule A Meeting</h2>
+                        <p class="meeting-subtitle">Leave us a little info and we will get in touch asap!</p>
+                    </div>
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <h3 class="step-title">Initiating Contact</h3>
+                            <p class="step-description">Our team will reach out to you within the next 24 business hours.</p>
+                        </div>
+                        <div class="process-step">
+                            <h3 class="step-title">Define Your Needs</h3>
+                            <p class="step-description">Tell us what you need — our tech team will analyze and suggest the best solution.</p>
+                        </div>
+                        <div class="process-step">
+                            <h3 class="step-title">NDA Signing</h3>
+                            <p class="step-description">We secure your idea with a signed NDA. Your privacy is always our priority.</p>
+                        </div>
+                        <div class="process-step">
+                            <h3 class="step-title">Estimated Budget/Cost</h3>
+                            <p class="step-description">After in-depth evaluation, we share the estimated budget and project timeline.</p>
+                        </div>
+                        <div class="process-step">
+                            <h3 class="step-title">Timely Launch</h3>
+                            <p class="step-description">We respect your deadlines — delivering on time with full transparency.</p>
+                        </div>
+                    </div>
+                    <div class="divider-line"></div>
+                </div>
+                <div class="meeting-right">
+                    <form class="form-container">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Your name*</label>
+                                <input type="text" class="form-input" required />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Contact*</label>
+                                <input type="text" class="form-input" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email*</label>
+                            <input type="email" class="form-input" required />
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Company*</label>
+                                <input type="text" class="form-input" required />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Designation</label>
+                                <input type="text" class="form-input" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Service*</label>
+                            <select class="form-select" required>
+                                <option value>Select</option>
+                                <option value="web-dev">Web Development</option>
+                                <option value="mobile-dev">Mobile Development</option>
+                                <option value="ui-ux">UI/UX Design</option>
+                                <option value="digital-marketing">Digital Marketing</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">About Project</label>
+                            <textarea class="form-textarea" rows="4"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Budget</label>
+                                <select class="form-select">
+                                    <option value>Select</option>
+                                    <option value="5k-10k">$5K - $10K</option>
+                                    <option value="10k-25k">$10K - $25K</option>
+                                    <option value="25k-50k">$25K - $50K</option>
+                                    <option value="50k+">$50K+</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Timeline</label>
+                                <select class="form-select">
+                                    <option value>Select</option>
+                                    <option value="1-3months">1-3 Months</option>
+                                    <option value="3-6months">3-6 Months</option>
+                                    <option value="6months+">6+ Months</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">How did you hear about us?</label>
+                            <textarea class="form-textarea" placeholder="Hi! i'd like to ask about" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Section -->
+    <section class="help-section">
+        <div class="help-bg">
+            <div class="bg-shape shape-1"></div>
+            <div class="bg-shape shape-2"></div>
+        </div>
+        <div class="help-container">
+            <h2 class="help-title">Always Here to Help!</h2>
+            <div class="help-contacts">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <span class="contact-text">+91 9429269295</span>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <span class="contact-text">info@codelix.in</span>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <span class="contact-text">Ahmedabad, India</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="testimonial-header">
+            <h2 class="testimonial-bg-text">Testimonial</h2>
+            <p class="testimonial-subtitle">Words from Our Partners</p>
+        </div>
+        <div class="testimonial-slider">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-slide active">
+                <div class="testimonial-content">
+                    <div class="testimonial-avatar-container">
+                        <img src="https://i.pravatar.cc/150?img=32" alt="Sarah Johnson" class="testimonial-avatar" />
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <h3 class="testimonial-name">Sarah Johnson</h3>
+                    <span class="testimonial-role">CEO, TechNova Solutions</span>
+                    <p class="testimonial-text">Working with Codalix has been a game-changer for our business. Their team delivered our e-commerce platform ahead of schedule, and the results have exceeded our expectations. The attention to detail and innovative solutions they provided were impressive.</p>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <div class="testimonial-avatar-container">
+                        <img src="https://i.pravatar.cc/150?img=45" alt="Michael Chen" class="testimonial-avatar" />
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <h3 class="testimonial-name">Michael Chen</h3>
+                    <span class="testimonial-role">CTO, MobileFirst Inc.</span>
+                    <p class="testimonial-text">The mobile app developed by Codalix has transformed how we engage with our customers. The user experience is seamless, and the performance is outstanding. Their team's expertise in mobile technologies is truly commendable. Highly recommended!</p>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <div class="testimonial-avatar-container">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="Emily Rodriguez" class="testimonial-avatar" />
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <h3 class="testimonial-name">Emily Rodriguez</h3>
+                    <span class="testimonial-role">Design Director, PixelPerfect</span>
+                    <p class="testimonial-text">Codalix's UI/UX design services helped us revamp our entire digital presence. The new design not only looks stunning but has significantly improved our conversion rates. Their team understood our vision and brought it to life perfectly.</p>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <button class="testimonial-nav prev" aria-label="Previous testimonial">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="testimonial-nav next" aria-label="Next testimonial">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Dots Navigation -->
+            <div class="testimonial-dots">
+                <span class="dot active" data-slide="0" aria-label="Go to slide 1"></span>
+                <span class="dot" data-slide="1" aria-label="Go to slide 2"></span>
+                <span class="dot" data-slide="2" aria-label="Go to slide 3"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer section-padding">
+        <div class="container footer-border">
+            <div class="footer-grid">
+                <!-- Info Column -->
+                <div class="footer-column p-5">
+                    <h4>INFO</h4>
+                    <ul>
+                        <li><a href="#">Codalix</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div class="footer-column p-5">
+                    <h4>SERVICES</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Agentic AI</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="footer-column newsletter p-5" style="border-left: 1px solid #ffffff; padding-right: 0px !important;">
+                    <h4>JOIN NOW</h4>
+                    <p>Join Our Newsletter To Stay Up To Date On Features And Releases</p>
+                    <form>
+                        <input type="email" placeholder="E-mail" required />
+                        <button type="submit">→</button>
+                    </form>
+                    <p class="small-note">Join Our Newsletter To Stay Up To Date On Features And Releases</p>
+                </div>
+
+                <!-- Logo Column -->
+                <div class="footer-column logo-col">
+                    <div class="p-5">
+                        <img width="50px" src="./images/footer-logo.png" alt="Logo" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="d-flex justify-content-between">
+                    <p>info@codalix.in</p>
+                    <img src="./images/ep_top-right.png" alt="">
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p>INSTAGRAM</p>
+                    <img src="./images/ep_top-right.png" alt="">
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p>UPWORK</p>
+                    <img src="./images/ep_top-right.png" alt="">
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p>LINKEDIN</p>
+                    <img src="./images/ep_top-right.png" alt="">
+                </div>
+            </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/testimonial-slider.js"></script>
+</body>
+</html>
