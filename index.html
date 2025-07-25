@@ -52,7 +52,7 @@
         <a href="#">Home</a>
         <a href="#">About Us</a>
         <a href="#">Services</a>
-        <a href="#">Portfolio</a>
+        <a href="./portfolio.html">Portfolio</a>
         <a href="/contact.html">Contact</a>
     </nav>
 
@@ -73,8 +73,37 @@
             <div class="hero-btn text-center">
                 <button>Build With Purpose</button>
             </div>
-            <div class="mt-5 d-flex justify-content-center">
-                <img src="./images/hero-banner.png" alt="" width="80%">
+            <div class="hero-slider-container mt-5">
+                <div class="hero-slider">
+                    <!-- Slide 1 -->
+                    <div class="hero-slide active">
+                        <img src="./images/hero-banner.png" alt="Hero Banner" class="hero-slide-img">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="hero-slide">
+                        <img src="./images/hero-banner.png" alt="Hero Banner" class="hero-slide-img">
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="hero-slide">
+                        <img src="./images/hero-banner.png" alt="Hero Banner" class="hero-slide-img">
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="hero-slide">
+                        <img src="./images/hero-banner.png" alt="Hero Banner" class="hero-slide-img">
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="hero-slide">
+                        <img src="./images/hero-banner.png" alt="Hero Banner" class="hero-slide-img">
+                    </div>
+                </div>
+                <!-- Navigation Dots -->
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                    <span class="dot" data-slide="4"></span>
+                </div>
             </div>
         </div>
     </section>
@@ -157,36 +186,115 @@
     </section>
 
 
-    <section class="working-section section-padding">
+    <section class="working-section section-padding" id="process-steps">
         <div class="working-title text-center">
             <h2 class="grey-text">Working Steps</h2>
-            <p class="black-text mt-2">We Simplify the software developemnt process:</p>
+            <p class="black-text mt-2">We Simplify the software development process:</p>
         </div>
 
         <div class="container">
             <div class="row row-gap mt-3 md:mt-5">
                 <div class="col-lg-6">
                     <div class="process-container">
-                        <h2>Current Process</h2>
-                        <div class="step">Requirement Analysis</div>
-                        <div class="step">App/Product Planning</div>
-                        <div class="step">Prototype Development</div>
-                        <div class="step">Coding & Development</div>
-                        <div class="step">Quality Assurance</div>
-                        <div class="step">Launch Execution</div>
-                        <div class="step">Ongoing Support & Updates</div>
+                        <h2>Our Process</h2>
+                        <div class="step active" data-step="1">
+                            <span class="step-number">01</span>
+                            <span class="step-text">Requirement Analysis</span>
+                        </div>
+                        <div class="step" data-step="2">
+                            <span class="step-number">02</span>
+                            <span class="step-text">App/Product Planning</span>
+                        </div>
+                        <div class="step" data-step="3">
+                            <span class="step-number">03</span>
+                            <span class="step-text">Prototype Development</span>
+                        </div>
+                        <div class="step" data-step="4">
+                            <span class="step-number">04</span>
+                            <span class="step-text">Coding & Development</span>
+                        </div>
+                        <div class="step" data-step="5">
+                            <span class="step-number">05</span>
+                            <span class="step-text">Quality Assurance</span>
+                        </div>
+                        <div class="step" data-step="6">
+                            <span class="step-number">06</span>
+                            <span class="step-text">Launch Execution</span>
+                        </div>
+                        <div class="step" data-step="7">
+                            <span class="step-number">07</span>
+                            <span class="step-text">Ongoing Support & Updates</span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 bg-blue">
-                    <div class="Requirement-analysis mt-5 mb-5 md:mb-0">
+                    <div class="step-content active" id="step-1">
                         <div class="d-flex justify-content-center">
-                            <img src="./images/analysis.png" alt="" width="80%">
+                            <img src="./images/analysis.png" alt="Requirement Analysis" width="80%">
                         </div>
                         <div class="analysis-text text-center white-text mt-5">
                             <h3>Requirement Analysis</h3>
-                            <p>We take the time to deeply understand your business goals, technical needs, and end-user
-                                expectations. This phase ensures we align our solutions with your vision and challenges.
-                            </p>
+                            <p>We take the time to deeply understand your business goals, technical needs, and end-user expectations. This phase ensures we align our solutions with your vision and challenges.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-content" id="step-2">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/planning.png" alt="App/Product Planning" width="80%">
+                        </div>
+                        <div class="analysis-text text-center white-text mt-5">
+                            <h3>App/Product Planning</h3>
+                            <p>Our team creates a detailed roadmap for your project, outlining features, timelines, and resources needed to bring your vision to life efficiently.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-content" id="step-3">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/prototype.png" alt="Prototype Development" width="80%">
+                        </div>
+                        <div class="analysis-text text-center white-text mt-5">
+                            <h3>Prototype Development</h3>
+                            <p>We build interactive prototypes to visualize the user experience and gather early feedback before full development begins.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-content" id="step-4">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/development.png" alt="Coding & Development" width="80%">
+                        </div>
+                        <div class="analysis-text text-center white-text mt-5">
+                            <h3>Coding & Development</h3>
+                            <p>Our expert developers bring your application to life using the latest technologies and best practices in software development.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-content" id="step-5">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/quality-assurance.png" alt="Quality Assurance" width="80%">
+                        </div>
+                        <div class="analysis-text text-center white-text mt-5">
+                            <h3>Quality Assurance</h3>
+                            <p>We rigorously test your application to ensure it meets the highest standards of quality, performance, and security.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-content" id="step-6">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/launch.png" alt="Launch Execution" width="80%">
+                        </div>
+                        <div class="analysis-text text-center white-text mt-5">
+                            <h3>Launch Execution</h3>
+                            <p>We handle the deployment process to ensure a smooth and successful launch of your application.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-content" id="step-7">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/support.png" alt="Ongoing Support & Updates" width="80%">
+                        </div>
+                        <div class="analysis-text text-center white-text mt-5">
+                            <h3>Ongoing Support & Updates</h3>
+                            <p>We provide continuous support and updates to keep your application running smoothly and securely.</p>
                         </div>
                     </div>
                 </div>
@@ -210,8 +318,8 @@
                 </div>
             </div>
             <div class="search-wrapper">
-                <input type="text" class="search-input" placeholder="What can we do for you?">
-                <button class="search-button">
+                <input type="text" class="search-input" placeholder="What can we do for you?" disabled>
+                <button class="search-button" disabled>
                     <i class="fas fa-search"></i>
                 </button>
             </div>
@@ -483,28 +591,94 @@
 
 
 
-    <!-- testimonola-------------- -->
-    <section class="testimonials section-padding">
-
-        <div class="success-title text-center">
-            <h2 class="grey-text">Testimonial</h2>
-            <p class="black-text">Words from Our Partners</p>
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="testimonial-header">
+            <h2 class="testimonial-bg-text">Testimonial</h2>
+            <p class="testimonial-subtitle">Words from Our Partners</p>
         </div>
-        <div class="testimonial-container" id="testimonial">
-            <div class="avatar"></div>
-            <div class="name" id="name">Rakesh Patel</div>
-            <div class="text" id="text">
-                Codelix IT Solutios Pvt. Ltd. is good for learning IT engeneering courses and learning software
-                development
-                languages. Behaviour is also very good of all employees of Codelix
+        <div class="testimonial-slider">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-slide active">
+                <div class="testimonial-content">
+                    <div class="testimonial-avatar-container">
+                        <img src="https://i.pravatar.cc/150?img=32" alt="Sarah Johnson" class="testimonial-avatar" />
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <h3 class="testimonial-name">Sarah Johnson</h3>
+                    <span class="testimonial-role">CEO, TechNova Solutions</span>
+                    <p class="testimonial-text">Working with Codalix has been a game-changer for our business. Their team delivered our e-commerce platform ahead of schedule, and the results have exceeded our expectations. The attention to detail and innovative solutions they provided were impressive.</p>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
             </div>
-            <div class="stars" id="stars">★★★★★</div>
-            <div class="navigation">
-                <button class="nav-btn left" onclick="prevTestimonial()">←</button>
-                <button class="nav-btn right" onclick="nextTestimonial()">→</button>
+            
+            <!-- Testimonial 2 -->
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <div class="testimonial-avatar-container">
+                        <img src="https://i.pravatar.cc/150?img=45" alt="Michael Chen" class="testimonial-avatar" />
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <h3 class="testimonial-name">Michael Chen</h3>
+                    <span class="testimonial-role">CTO, MobileFirst Inc.</span>
+                    <p class="testimonial-text">The mobile app developed by Codalix has transformed how we engage with our customers. The user experience is seamless, and the performance is outstanding. Their team's expertise in mobile technologies is truly commendable. Highly recommended!</p>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <div class="testimonial-avatar-container">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="Emily Rodriguez" class="testimonial-avatar" />
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <h3 class="testimonial-name">Emily Rodriguez</h3>
+                    <span class="testimonial-role">Design Director, PixelPerfect</span>
+                    <p class="testimonial-text">Codalix's UI/UX design services helped us revamp our entire digital presence. The new design not only looks stunning but has significantly improved our conversion rates. Their team understood our vision and brought it to life perfectly.</p>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <button class="testimonial-nav prev" aria-label="Previous testimonial">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="testimonial-nav next" aria-label="Next testimonial">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Dots Navigation -->
+            <div class="testimonial-dots">
+                <span class="dot active" data-slide="0" aria-label="Go to slide 1"></span>
+                <span class="dot" data-slide="1" aria-label="Go to slide 2"></span>
+                <span class="dot" data-slide="2" aria-label="Go to slide 3"></span>
             </div>
         </div>
-
     </section>
 
 
@@ -611,9 +785,10 @@
                         style="border-left: 1px solid #ffffff; padding-right: 0px !important;">
                         <h4>JOIN NOW</h4>
                         <p>Join Our Newsletter To Stay Up To Date On Features And Releases</p>
-                        <form>
-                            <input type="email" placeholder="E-mail" required />
-                            <button type="submit">→</button>
+                        <form style="display: flex !important; margin: 20px 0 !important; width: 100% !important;">
+                            <input type="email" placeholder="E-mail" required 
+                                   style="flex: 1 !important; padding: 15px 20px !important; font-size: 16px !important; border: 1px solid #3E7DFC !important; background: rgba(255, 255, 255, 0.1) !important; color: white !important; border-radius: 4px 0 0 4px !important; height: 55px !important; margin: 0 !important; box-sizing: border-box !important;" />
+                            <button type="submit" style="background-color: #3E7DFC !important; color: white !important; border: none !important; padding: 0 25px !important; cursor: pointer !important; font-size: 20px !important; border-radius: 0 4px 4px 0 !important; height: 55px !important; margin: 0 !important; display: flex !important; align-items: center !important; justify-content: center !important; width: auto !important;">→</button>
                         </form>
                         <p class="small-note">Join Our Newsletter To Stay Up To Date On Features And Releases</p>
                     </div>
@@ -647,7 +822,7 @@
                 </div>
 
                 <div class="footer-bottom">
-                    <p>© 2025 Codalix Foundation — All Copyright Reserved</p>
+                    <p> 2025 Codalix Foundation — All Copyright Reserved</p>
                     <div>
                         <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
                     </div>
@@ -660,6 +835,112 @@
 
 
     <script src="./js/script.js"></script>
+    <script>
+        // Hero Slider Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.hero-slide');
+            const dots = document.querySelectorAll('.slider-dots .dot');
+            let currentSlide = 0;
+            let slideInterval;
+            const SLIDE_INTERVAL = 3000; // 3 seconds
+
+            // Function to update slide classes for sliding animation
+            function updateSlides() {
+                // Remove all active/prev/next classes
+                slides.forEach((slide, index) => {
+                    slide.classList.remove('active', 'prev', 'next');
+                    
+                    // Set previous slide
+                    if (index === (currentSlide - 1 + slides.length) % slides.length) {
+                        slide.classList.add('prev');
+                    } 
+                    // Set next slide
+                    else if (index === (currentSlide + 1) % slides.length) {
+                        slide.classList.add('next');
+                    }
+                });
+                
+                // Set current slide
+                slides[currentSlide].classList.add('active');
+                
+                // Update dots
+                updateDots();
+            }
+
+            // Function to update navigation dots
+            function updateDots() {
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentSlide);
+                });
+            }
+
+            // Function to show next slide
+            function nextSlide() {
+                // Set current slide to slide out to the left
+                slides[currentSlide].classList.add('prev');
+                slides[currentSlide].classList.remove('active');
+                
+                // Update current slide index
+                currentSlide = (currentSlide + 1) % slides.length;
+                
+                // Set new slide to slide in from the right
+                setTimeout(() => {
+                    updateSlides();
+                }, 50);
+            }
+
+            // Function to show specific slide
+            function goToSlide(index) {
+                if (index === currentSlide) return;
+                
+                // Determine slide direction
+                const direction = index > currentSlide ? 'right' : 'left';
+                
+                // Update current slide
+                currentSlide = (index + slides.length) % slides.length;
+                
+                // Update slides with direction
+                updateSlides();
+            }
+
+            // Start auto-sliding
+            function startSlider() {
+                stopSlider();
+                slideInterval = setInterval(nextSlide, SLIDE_INTERVAL);
+            }
+
+            // Stop auto-sliding
+            function stopSlider() {
+                if (slideInterval) {
+                    clearInterval(slideInterval);
+                }
+            }
+
+            // Initialize the slider
+            function initSlider() {
+                updateSlides();
+                startSlider();
+                
+                // Pause on hover
+                const sliderContainer = document.querySelector('.hero-slider-container');
+                if (sliderContainer) {
+                    sliderContainer.addEventListener('mouseenter', stopSlider);
+                    sliderContainer.addEventListener('mouseleave', startSlider);
+                }
+                
+                // Dot navigation
+                dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => {
+                        goToSlide(index);
+                        startSlider();
+                    });
+                });
+            }
+
+            // Initialize the slider when DOM is loaded
+            initSlider();
+        });
+    </script>
     <script>
         const testimonials = [
             {
@@ -727,7 +1008,10 @@
         updateTestimonial();
         startAutoSlide();
     </script>
-
+    
+    <!-- Process Steps Script -->
+    <script src="./js/process-steps.js"></script>
+    <script src="./js/testimonial-slider.js"></script>
 </body>
 
 </html>
