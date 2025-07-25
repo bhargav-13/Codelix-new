@@ -272,36 +272,6 @@ li {
 
 
 /* about-us-css----------------------- */
-.about-section {
-    position: relative;
-    z-index: 1;
-    padding-bottom: 40px;
-}
-
-.about-box {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    width: 80%;
-    margin-top: -100px;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.mission-vision-section {
-    position: relative;
-    padding-top: 300px;
-    margin-top: 0;
-    z-index: 1;
-}
-
-.vision-mision {
-    padding: 80px 20px 40px;
-    border-radius: 10px;
-}
-
 .about-title h2 {
     font-size: 60px;
     font-weight: 600;
@@ -335,15 +305,11 @@ li {
 
 
 /* about-us-css------------- */
-.about-details {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 0;
-}
-
-.about-details .text-center {
-    flex: 1;
-    padding: 0 10px;
+.about-box {
+    width: 70%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 50px;
 }
 
 .about-box p {
@@ -366,10 +332,13 @@ li {
     margin: auto;
 }
 
+.vision-mision {
+    border-radius: 40px;
+    padding: 5rem;
+}
+
 .vision-border {
-    border-right: 1px solid #d1d5db;
-    height: 80%;
-    margin: auto 0;
+    border-right: 2px solid #9c9c9c;
 }
 
 @media (max-width: 768px) {
@@ -610,6 +579,136 @@ li {
     
     .step-content p {
         font-size: 1rem;
+    }
+}
+
+/* Process Steps - Mobile View */
+.process-mobile {
+    margin-top: 30px;
+}
+
+.process-step {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.process-step:last-child {
+    margin-bottom: 0;
+}
+
+.step-header {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eee;
+}
+
+.step-header.active {
+    background-color: #3E7DFC;
+    color: white;
+}
+
+.step-header.active .step-number {
+    color: white;
+    border-color: white;
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #3E7DFC;
+    color: #3E7DFC;
+    font-weight: bold;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.step-title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.step-content {
+    padding: 20px;
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.step-content img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.step-description {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Active step styling */
+.process-step.active {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.process-step.active .step-content {
+    display: block;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Desktop styles - hide mobile view */
+@media (min-width: 992px) {
+    .process-mobile {
+        display: none;
+    }
+}
+
+/* Mobile styles - hide desktop view */
+@media (max-width: 991.98px) {
+    .process-desktop {
+        display: none;
+    }
+}
+
+/* Ensure proper spacing on mobile */
+@media (max-width: 767.98px) {
+    .process-step {
+        margin-bottom: 15px;
+    }
+    
+    .step-header {
+        padding: 12px 15px;
+    }
+    
+    .step-title {
+        font-size: 1rem;
+    }
+    
+    .step-content {
+        padding: 15px;
+    }
+    
+    .step-content img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 10px;
+        display: block;
     }
 }
 
@@ -912,8 +1011,8 @@ li {
 
 .cards {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     overflow: hidden;
     border-radius: 12px;
     /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); */
@@ -957,6 +1056,47 @@ li {
 
 
 
+
+/* Section scroll/fade-in animation */
+.section-animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: opacity, transform;
+}
+.section-animate.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Section opening animation (on page load) */
+.section-opening {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: sectionFadeIn 0.9s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes sectionFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: opacity, transform;
+}
+.section-animate.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 /* laudary-care-section----------- */
 .launndry-care-section {
@@ -1030,17 +1170,18 @@ li {
         /* prevents overflow on small screens */
     }
 
-    .laundry-title {
-        margin-left: 20px !important;
-    }
-
     .btn-responsive {
-        justify-content: start !important;
-        /* margin-left: 20px; */
+        margin-top: auto;
+        margin-left: auto; /* Added left margin for mobile */
+    }
+    
+    .laundry-title {
+        margin-left: 0 !important;
+        text-align: center;
     }
 
     .get-in-touch-btn {
-        margin-left: 20px;
+        margin-left: 12px;
     }
 
 }
@@ -1794,5 +1935,34 @@ testimonials:hover .testimonial-icon i {
     
     .testimonial-nav.next {
         right: 5px;
+    }
+}
+
+/* Smooth Scroll Reveal Animations */
+.section-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform;
+}
+
+.section-animate.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Add delay for staggered animations */
+.section-animate.delay-1 { transition-delay: 0.1s; }
+.section-animate.delay-2 { transition-delay: 0.2s; }
+.section-animate.delay-3 { transition-delay: 0.3s; }
+.section-animate.delay-4 { transition-delay: 0.4s; }
+.section-animate.delay-5 { transition-delay: 0.5s; }
+
+/* Add this to your existing media query for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .section-animate {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
     }
 }

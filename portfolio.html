@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Codelix</title>
+    <link rel="stylesheet" href="FOOTER/footer.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/font-awesome-link.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./js/codelix.js">
+    <script src="./js/codelix.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -20,7 +21,7 @@
         <header class="header">
             <!-- Logo/Company Name -->
             <div class="header-logo-section">
-                <img src="./images/header-logo.png" alt="Codelix Logo" class="header-logo">
+                <a href="index.html"><img src="./images/header-logo.png" alt="Codelix Logo" class="header-logo"></a>
             </div>
 
             <!-- Menu Icon and Text -->
@@ -45,9 +46,9 @@
         </div>
         <!-- Menu Items -->
         <a href="index.html">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Services</a>
-        <a href="#" class="active">Portfolio</a>
+        <a href="index.html#about-section">About Us</a>
+        <a href="index.html#services-section">Services</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
         <a href="contact.html">Contact</a>
     </nav>
 
@@ -830,83 +831,92 @@ testimonials:hover .testimonial-icon i {
     </script>
 
     <!-- Footer Section -->
-    <footer class="footer section-padding">
-        <div class="container footer-border">
-            <div class="footer-grid">
-                <!-- Info Column -->
-                <div class="footer-column p-5">
-                    <h4>INFO</h4>
-                    <ul>
-                        <li><a href="#">Codalix</a></li>
-                        <li><a href="#">Work</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Services Column -->
-                <div class="footer-column p-5">
-                    <h4>SERVICES</h4>
-                    <ul>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Mobile Development</a></li>
-                        <li><a href="#">UI/UX Design</a></li>
-                        <li><a href="#">Digital Marketing</a></li>
-                        <li><a href="#">Agentic AI</a></li>
-                    </ul>
-                </div>
-
-                <!-- Newsletter Column -->
-                <div class="footer-column newsletter p-5"
-                    style="border-left: 1px solid #ffffff; padding-right: 0px !important;">
-                    <h4>JOIN NOW</h4>
-                    <p>Join Our Newsletter To Stay Up To Date On Features And Releases</p>
-                    <form>
-                        <input type="email" placeholder="E-mail" required />
-                        <button type="submit">→</button>
-                    </form>
-                    <p class="small-note">Join Our Newsletter To Stay Up To Date On Features And Releases</p>
-                </div>
-
-                <!-- Logo Column -->
-                <div class="footer-column logo-col">
-                    <div class="p-5">
-                        <img width="50px" src="./images/footer-logo.png" alt="Logo" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-links">
-                <div class="d-flex justify-content-between">
-                    <p>info@codelix.in</p>
-                    <img src="./images/ep_top-right.png" alt="">
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p>INSTAGRAM</p>
-                    <img src="./images/ep_top-right.png" alt="">
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p>UPWORK</p>
-                    <img src="./images/ep_top-right.png" alt="">
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p>LINKEDIN</p>
-                    <img src="./images/ep_top-right.png" alt="">
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p> 2025 Codalix Foundation — All Copyright Reserved</p>
-                <div>
-                    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-                </div>
-            </div>
+    <footer class="footer">
+      <!-- Top left corner accent -->
+      <div class="corner-accent top-left">
+        <div class="accent-bar horizontal"></div>
+        <div class="accent-bar vertical"></div>
+      </div>
+      <!-- Top right corner accent -->
+      <div class="corner-accent top-right">
+        <div class="accent-bar horizontal"></div>
+        <div class="accent-bar vertical"></div>
+      </div>
+      <div class="footer-container">
+        <div class="footer-main-grid">
+          <!-- INFO Section -->
+          <div class="footer-section section-border-right">
+            <h3 class="footer-heading">INFO</h3>
+            <nav class="footer-nav">
+              <a href="/index.html">Codelix</a>
+              <a href="/portfolio.html">Work</a>
+              <a href="/index.html#services-section">Services</a>
+              <a href="/index.html#blog">Blog</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+          </div>
+          <!-- SERVICES Section -->
+          <div class="footer-section section-border-right">
+            <h3 class="footer-heading">SERVICES</h3>
+            <nav class="footer-nav">
+              <a href="/index.html#services-section">Web Development</a>
+              <a href="/index.html#services-section">Mobile Development</a>
+              <a href="/index.html#services-section">UI/UX Design</a>
+              <a href="/index.html#services-section">Digital Marketing</a>
+              <a href="/index.html#services-section">Agentic AI</a>
+            </nav>
+          </div>
+          <!-- JOIN NOW Section -->
+          <div class="footer-section">
+            <h3 class="footer-heading">JOIN NOW</h3>
+            <p class="footer-text">Join Our Newsletter To Stay Up To Date On Features And Releases</p>
+            <form class="subscribe-form" id="subscribeForm">
+              <input type="email" placeholder="E-mail" class="subscribe-input" required>
+              <button type="submit" class="subscribe-btn">→</button>
+            </form>
+            <p class="footer-text small">Join Our Newsletter To Stay Up To Date On Features And Releases</p>
+          </div>
         </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom-grid">
+          <div class="footer-bottom-item">
+            <span>info@codelix.in</span>
+            <span class="footer-icon">✉️</span>
+          </div>
+          <div class="footer-bottom-item">
+            <span>INSTAGRAM</span>
+            <span class="footer-icon">🔗</span>
+          </div>
+          <div class="footer-bottom-item">
+            <span>UPWORK</span>
+            <span class="footer-icon">🔗</span>
+          </div>
+          <div class="footer-bottom-item">
+            <span>LINKEDIN</span>
+            <span class="footer-icon">🔗</span>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>© 2025 Codalix Foundation — All Copyright Reserved</p>
+          <div class="footer-legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom left corner accent -->
+      <div class="corner-accent bottom-left">
+        <div class="accent-bar horizontal"></div>
+        <div class="accent-bar vertical"></div>
+      </div>
+      <!-- Bottom right corner accent -->
+      <div class="corner-accent bottom-right">
+        <div class="accent-bar horizontal"></div>
+        <div class="accent-bar vertical"></div>
+      </div>
     </footer>
-
-    <script src="./js/script.js"></script>
+    <script src="FOOTER/footer.js"></script>
 </body>
-
+<script src="js/script.js"></script>
 <script src="js/testimonial-slider.js"></script>
 </html>

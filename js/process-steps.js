@@ -106,6 +106,89 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }, { passive: false });
     
+    // Mobile process steps functionality
+    const processSteps = document.querySelectorAll('.process-step');
+    const desktopSteps = document.querySelectorAll('.process-desktop .step');
+    const desktopContents = document.querySelectorAll('.process-desktop .step-content');
+    let isAnimating = false;
+
+    // Function to close all steps except the current one (for mobile)
+    function closeOtherSteps(currentStep) {
+        processSteps.forEach(step => {
+            if (step !== currentStep) {
+                step.classList.remove('active');
+                const content = step.querySelector('.step-content');
+                if (content) content.style.display = 'none';
+            }
+        });
+    }
+
+    // Mobile step click handler
+    processSteps.forEach(step => {
+        const header = step.querySelector('.step-header');
+        const content = step.querySelector('.step-content');
+        
+        if (header && content) {
+            header.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                const isActive = step.classList.contains('active');
+                
+                // Close all steps first
+                closeOtherSteps(step);
+                
+                // Toggle current step
+                if (!isActive) {
+                    step.classList.add('active');
+                    content.style.display = 'block';
+                } else {
+                    step.classList.remove('active');
+                    content.style.display = 'none';
+                }
+            });
+        }
+    });
+
+    // Desktop functionality
+    function setActiveDesktopStep(stepNumber) {
+        if (isAnimating) return;
+        isAnimating = true;
+        
+        // Remove active class from all steps and contents
+        desktopSteps.forEach(step => step.classList.remove('active'));
+        desktopContents.forEach(content => content.classList.remove('active'));
+        
+        // Add active class to selected step and corresponding content
+        const selectedStep = document.querySelector(`.process-desktop .step[data-step="${stepNumber}"]`);
+        const selectedContent = document.getElementById(`step-${stepNumber}`);
+        
+        if (selectedStep && selectedContent) {
+            selectedStep.classList.add('active');
+            selectedContent.classList.add('active');
+        }
+        
+        // Reset animation lock
+        setTimeout(() => {
+            isAnimating = false;
+        }, 300);
+    }
+    
+    // Desktop step click handler
+    desktopSteps.forEach(step => {
+        step.addEventListener('click', function() {
+            const stepNumber = this.getAttribute('data-step');
+            setActiveDesktopStep(stepNumber);
+        });
+    });
+
+    // Initialize first step as active on desktop
+    if (desktopSteps.length > 0) {
+        desktopSteps[0].classList.add('active');
+        const firstContent = document.getElementById(`step-${desktopSteps[0].getAttribute('data-step')}`);
+        if (firstContent) firstContent.classList.add('active');
+    }
+
     // Set the first step as active by default
     if (steps.length > 0) {
         setActiveStep('1', 'auto');
