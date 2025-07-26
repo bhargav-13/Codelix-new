@@ -1665,7 +1665,26 @@ input::placeholder {
     transition: all 0.3s ease;
 }
 
-.testimonial-avatar:hover {
+.testimonial-avatar-initials {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3f51b5 60%, #2196f3 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.testimonial-avatar-initials:hover {
     transform: scale(1.05);
 }
 
