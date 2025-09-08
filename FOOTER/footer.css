@@ -93,27 +93,36 @@ body {
 }
 .subscribe-input {
   flex: 1;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   border: 1px solid var(--footer-border);
   background: transparent;
   color: var(--footer-text);
   border-radius: 0.375rem;
   font-size: 1rem;
+  line-height: 1.5;
+  height: auto;
+  box-sizing: border-box;
 }
 .subscribe-input::placeholder {
   color: var(--footer-text-light);
-  opacity: 0.6;
+  opacity: 0.8;
+  font-size: 1rem;
+  line-height: 1.5;
+  vertical-align: middle;
 }
 .subscribe-btn {
   background: var(--footer-accent);
   color: #18181b;
   border: none;
   border-radius: 0.375rem;
-  padding: 0.5rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s;
+  height: auto;
+  line-height: 1.5;
+  box-sizing: border-box;
 }
 .subscribe-btn:hover {
   background: #bef264;

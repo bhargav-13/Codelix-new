@@ -846,12 +846,20 @@ li {
     font-weight: 600;
     letter-spacing: 1px;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
 }
 
 .success-title p {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
+    margin-top: 1px;
+    margin-top: -8px;
+}
+
+/* Reduce space between header and subheader in Industries section */
+.industries-section .success-title h2 {
+    margin-bottom: 10px;
 }
 
 .grid-container {
@@ -1075,7 +1083,7 @@ li {
     position: absolute;
     bottom: 20px;
     width: 100%;
-    padding: 20px;
+    padding: 0 25px 25px 30px;
     /* background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent); */
     color: white;
     /* box-sizing: border-box; */
@@ -1141,7 +1149,7 @@ li {
 
 /* laudary-care-section----------- */
 .launndry-care-section {
-    margin: 180px 0px;
+    margin: 130px 0px;
 }
 
 .get-in-touch-btn button {
@@ -2025,4 +2033,9 @@ testimonials:hover .testimonial-icon i {
         transform: none !important;
         transition: none !important;
     }
+}
+
+/* Portfolio Title Spacing */
+.portfolio-title h2 {
+    margin-bottom: 10px !important;
 }

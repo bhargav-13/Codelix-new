@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/font-awesome-link.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/chatbot.css">
     <script src="./js/codelix.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600;700&display=swap"
@@ -134,63 +135,67 @@
                             <p class="step-description">We respect your deadlines — delivering on time with full transparency.</p>
                         </div>
                     </div>
-                    <div class="divider-line"></div>
+                    <div class="divider-line"></div>    
                 </div>
                 <div class="meeting-right">
-                    <form class="form-container">
+                    <form class="form-container" id="contactForm">
                         <div class="form-row">
                             <div class="form-group">
                                 <label class="form-label">Your name*</label>
-                                <input type="text" class="form-input" required />
+                                <input type="text" class="form-input" id="name" name="name" required />
                             </div>
                             <div class="form-group">
                                 <label class="form-label">Contact*</label>
-                                <input type="text" class="form-input" required />
+                                <input type="text" class="form-input" id="contact" name="contact" required />
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="form-label">Email*</label>
-                            <input type="email" class="form-input" required />
+                            <input type="email" class="form-input" id="email" name="email" required />
                         </div>
                         <div class="form-row">
                             <div class="form-group">
                                 <label class="form-label">Company*</label>
-                                <input type="text" class="form-input" required />
+                                <input type="text" class="form-input" id="company" name="company" required />
                             </div>
                             <div class="form-group">
                                 <label class="form-label">Designation</label>
-                                <input type="text" class="form-input" />
+                                <input type="text" class="form-input" id="designation" name="designation" />
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="form-label">Service*</label>
-                            <select class="form-select" required>
-                                <option value>Select</option>
+                            <select class="form-select" id="service" name="service" required>
+                                <option value="">Select</option>
                                 <option value="web-dev">Web Development</option>
                                 <option value="mobile-dev">Mobile Development</option>
                                 <option value="ui-ux">UI/UX Design</option>
                                 <option value="digital-marketing">Digital Marketing</option>
+                                <option value="agentic-ai">Agentic AI</option>
+                                <option value="ecommerce">E-commerce Solutions</option>
+                                <option value="branding">Branding</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label class="form-label">About Project</label>
-                            <textarea class="form-textarea" rows="4"></textarea>
+                            <textarea class="form-textarea" id="project" name="project" rows="4"></textarea>
                         </div>
                         <div class="form-row">
                             <div class="form-group">
                                 <label class="form-label">Budget</label>
-                                <select class="form-select">
-                                    <option value>Select</option>
-                                    <option value="5k-10k">$5K - $10K</option>
-                                    <option value="10k-25k">$10K - $25K</option>
-                                    <option value="25k-50k">$25K - $50K</option>
-                                    <option value="50k+">$50K+</option>
+                                <select class="form-select" id="budget" name="budget">
+                                    <option value="">Select</option>
+                                    <option value="0-500">$0 - $500</option>
+                                    <option value="500-1500">$500 - $1500</option>
+                                    <option value="1500-5000">$1500 - $5000</option>
+                                    <option value="5000-10000">$5000- $10000</option>
+                                    <option value="10000+">$10000+</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label class="form-label">Timeline</label>
-                                <select class="form-select">
-                                    <option value>Select</option>
+                                <select class="form-select" id="timeline" name="timeline">
+                                    <option value="">Select</option>
                                     <option value="1-3months">1-3 Months</option>
                                     <option value="3-6months">3-6 Months</option>
                                     <option value="6months+">6+ Months</option>
@@ -199,8 +204,9 @@
                         </div>
                         <div class="form-group">
                             <label class="form-label">How did you hear about us?</label>
-                            <textarea class="form-textarea" placeholder="Hi! i'd like to ask about" rows="3"></textarea>
+                            <textarea class="form-textarea" id="hearAbout" name="hearAbout" placeholder="Hi! i'd like to ask about" rows="3"></textarea>
                         </div>
+                        <div id="formMessage" class="form-message" style="display: none;"></div>
                         <button type="submit" class="submit-btn">Submit</button>
                     </form>
                 </div>
@@ -393,11 +399,11 @@
           <div class="footer-section section-border-right">
             <h3 class="footer-heading">SERVICES</h3>
             <nav class="footer-nav">
-              <a href="#">Web Development</a>
-              <a href="#">Mobile Development</a>
-              <a href="#">UI/UX Design</a>
-              <a href="#">Digital Marketing</a>
-              <a href="#">Agentic AI</a>
+                <a href="/service.html#Web Application Development">Web Development</a>
+                <a href="/service.html">Mobile Development</a>
+                <a href="/service.html#UI/UX DESIGN">UI/UX Design</a>
+                <a href="/service.html">Digital Marketing</a>
+                <a href="/service.html">Agentic AI</a>
             </nav>
           </div>
           <!-- JOIN NOW Section -->
@@ -408,14 +414,13 @@
               <input type="email" placeholder="E-mail" class="subscribe-input" required>
               <button type="submit" class="subscribe-btn">→</button>
             </form>
-            <p class="footer-text small">Join Our Newsletter To Stay Up To Date On Features And Releases</p>
           </div>
         </div>
         <div class="footer-divider"></div>
         <div class="footer-bottom-grid">
             <div class="footer-bottom-item">
               <span>info@codelix.in</span>
-              <span class="footer-icon">✉️</span>
+              <span class="footer-icon">✉</span>
             </div>
             <a href="https://www.instagram.com/codelix.in" target="_blank" class="footer-bottom-item">
               <span>INSTAGRAM</span>
@@ -450,8 +455,86 @@
       </div>
     </footer>
     <script src="FOOTER/footer.js"></script>
+    <script src="./js/chatbot.js"></script>
 
 <script src="js/script.js"></script>
 <script src="js/testimonial-slider.js"></script>
+
+<script>
+// Contact Form Submission Handler
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                contact: document.getElementById('contact').value,
+                email: document.getElementById('email').value,
+                company: document.getElementById('company').value,
+                designation: document.getElementById('designation').value,
+                service: document.getElementById('service').value,
+                project: document.getElementById('project').value,
+                budget: document.getElementById('budget').value,
+                timeline: document.getElementById('timeline').value,
+                hearAbout: document.getElementById('hearAbout').value,
+                timestamp: new Date().toISOString()
+            };
+            
+            // Show loading state
+            const submitBtn = contactForm.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            try {
+                // Send to webhook
+                const response = await fetch('https://n8n.realxr.in/webhook/6f691b7e-d9d2-4d23-9845-6f2042441c8a', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+                
+                if (response.ok) {
+                    // Success
+                    const messageDiv = document.getElementById('formMessage');
+                    messageDiv.textContent = 'Your response is submitted successfully';
+                    messageDiv.style.display = 'block';
+                    messageDiv.style.color = '#28a745';
+                    contactForm.reset();
+                    
+                    // Hide message after 3.5 seconds
+                    setTimeout(() => {
+                        messageDiv.style.display = 'none';
+                    }, 3500);
+                } else {
+                    // Error
+                    throw new Error('Failed to send message');
+                }
+            } catch (error) {
+                console.error('Error sending form:', error);
+                const messageDiv = document.getElementById('formMessage');
+                messageDiv.textContent = 'Sorry, there was an error sending your message. Please try again or contact us directly.';
+                messageDiv.style.display = 'block';
+                messageDiv.style.color = '#dc3545';
+                
+                // Hide message after 3.5 seconds
+                setTimeout(() => {
+                    messageDiv.style.display = 'none';
+                }, 3500);
+            } finally {
+                // Reset button state
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+    }
+});
+</script>
 </body>
 </html>
